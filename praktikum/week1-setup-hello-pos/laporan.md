@@ -1,5 +1,5 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+# Laporan Praktikum Minggu 1 
+Topik: Pengenalan Paradigma dan Setup Proyek
 
 ## Identitas
 - Nama  : Tyas Nurshika Damaia
