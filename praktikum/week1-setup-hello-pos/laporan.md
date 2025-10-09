@@ -9,9 +9,10 @@ Topik: Pengenalan Paradigma dan Setup Proyek
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
-
+- Mahasiswa mampu mendefinisikan paradigma prosedural, OOP, dan fungsional.
+- Mahasiswa mampu membandingkan kelebihan dan keterbatasan tiap paradigma.
+- Mahasiswa mampu memberikan contoh program sederhana untuk masing-masing paradigma.
+- Mahasiswa aktif dalam diskusi kelas (bertanya, menjawab, memberi opini).
 ---
 
 ## Dasar Teori
