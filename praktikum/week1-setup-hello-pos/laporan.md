@@ -115,44 +115,11 @@ public class HelloFunctional {
 
 - Jelaskan bagaimana kode berjalan.
   
-**Procedural**
- 
-  a. Program Java selalu dimulai dari metode main().
-  b. Dua variabel dibuat:
+Dalam paradigma prosedural, program Java dimulai dari metode main(). Di dalamnya terdapat dua variabel yaitu nim yang menyimpan nilai "240202887" dan nama yang menyimpan "Tyas". Program kemudian menggunakan perintah System.out.println(...) untuk mencetak teks ke layar. Hasil akhirnya adalah tampilan pesan: Hello World, I am Tyas-240202887.
 
-     - nim menyimpan "240202887"
-     - nama menyimpan "Tyas"
-     
-  c. Baris System.out.println(...) mencetak teks ke layar.
-  d. Output yang dihasilkan adalah:
+Dalam paradigma fungsional, program juga dimulai dari metode main(), dengan dua variabel yang sama, yaitu nama dan nim. Namun, pendekatan ini berfokus pada fungsi yang menghasilkan output dari input tanpa membuat objek atau mengubah data. Perintah System.out.println(...) digunakan untuk mencetak hasil yang sama, yaitu: Hello World, I am Tyas-240202887.
 
-    `Hello World, I am Tyas-240202887`
-
-**Functional**
-
-  a. Program tetap dimulai dari metode main().
-
-  b. Di dalamnya terdapat dua variabel nama dan nim seperti pada versi prosedural.
-
-  c. Fungsi utama hanya fokus menghasilkan output dari input tanpa membuat objek.
-
-  d. Baris System.out.println(...) mencetak hasil:
-
-     `Hello World, I am Tyas-240202887`
-
-**OOP (Object-Oriented Programming)**
-
-  a. Program tetap dimulai dari main() di kelas HelloOOP.
-
-  b. Baris
-
-     `Mahasiswa m = new Mahasiswa("Tyas", "240202887");`
-
-    membuat objek baru dari kelas Mahasiswa. Konstruktor Mahasiswa(...) dijalankan untuk mengisi nilai nama dan NIM.
-
-  c. Baris m.sapa(); memanggil metode sapa() dari objek m, yang mencetak:
-
-      `Hello World, I am Tyas-240202887`
+Sementara dalam paradigma berorientasi objek (OOP), program dimulai dari metode main() di dalam kelas HelloOOP. Di dalamnya dibuat objek baru dari kelas Mahasiswa dengan baris Mahasiswa m = new Mahasiswa("Tyas", "240202887");. Konstruktor pada kelas Mahasiswa digunakan untuk mengisi nilai nama dan NIM. Selanjutnya, pemanggilan m.sapa(); menjalankan metode sapa() yang mencetak pesan ke layar: Hello World, I am Tyas-240202887.
 
 
 - Kendala yang dihadapi dan cara mengatasinya
