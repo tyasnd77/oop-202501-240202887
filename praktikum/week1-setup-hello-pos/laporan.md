@@ -115,47 +115,47 @@ public class HelloFunctional {
 
 - Jelaskan bagaimana kode berjalan.
   
- **Procedural**
+**Procedural**
  
-a. Program Java selalu dimulai dari metode main().
+  a. Program Java selalu dimulai dari metode main().
 
-b. Dua variabel dibuat:
+  b. Dua variabel dibuat:
 
      - nim menyimpan "240202887"
      
      - nama menyimpan "Tyas"
      
-c. Baris System.out.println(...) mencetak teks ke layar.
+  c. Baris System.out.println(...) mencetak teks ke layar.
 
-d. Output yang dihasilkan adalah:
+  d. Output yang dihasilkan adalah:
 
-`Hello World, I am Tyas-240202887`
+    `Hello World, I am Tyas-240202887`
 
 **Functional**
 
-a. Program tetap dimulai dari metode main().
+  a. Program tetap dimulai dari metode main().
 
-b. Di dalamnya terdapat dua variabel nama dan nim seperti pada versi prosedural.
+  b. Di dalamnya terdapat dua variabel nama dan nim seperti pada versi prosedural.
 
-c. Fungsi utama hanya fokus menghasilkan output dari input tanpa membuat objek.
+  c. Fungsi utama hanya fokus menghasilkan output dari input tanpa membuat objek.
 
-d. Baris System.out.println(...) mencetak hasil:
+  d. Baris System.out.println(...) mencetak hasil:
 
-`Hello World, I am Tyas-240202887`
+     `Hello World, I am Tyas-240202887`
 
 **OOP (Object-Oriented Programming)**
 
-a. Program tetap dimulai dari main() di kelas HelloOOP.
+  a. Program tetap dimulai dari main() di kelas HelloOOP.
 
-b. Baris
+  b. Baris
 
-`Mahasiswa m = new Mahasiswa("Tyas", "240202887");`
+     `Mahasiswa m = new Mahasiswa("Tyas", "240202887");`
 
-membuat objek baru dari kelas Mahasiswa. Konstruktor Mahasiswa(...) dijalankan untuk mengisi nilai nama dan NIM.
+    membuat objek baru dari kelas Mahasiswa. Konstruktor Mahasiswa(...) dijalankan untuk mengisi nilai nama dan NIM.
 
-c. Baris m.sapa(); memanggil metode sapa() dari objek m, yang mencetak:
+  c. Baris m.sapa(); memanggil metode sapa() dari objek m, yang mencetak:
 
-`Hello World, I am Tyas-240202887`
+      `Hello World, I am Tyas-240202887`
 
 
 - Kendala yang dihadapi dan cara mengatasinya
