@@ -1,18 +1,29 @@
- // HelloOOP.java
-class Mahasiswa {
+class Produk {
    String nama;
-   String NIM;
-   Mahasiswa(String nama, String NIM) {
+   int harga;
+   Produk(String nama, int harga) {
       this.nama = nama;
-      this.NIM = NIM;
+      this.harga = harga;
    }
-   void sapa(){ System.out.println("Hello World, I am" + " " + nama + "-" + NIM);}
 }
 
 public class HelloOOP {
    public static void main(String[] args) {
-       Mahasiswa m = new Mahasiswa ("Tyas","240202887");
-       m.sapa();
+      String nim = "240202887";
+      String namaMhs = "Tyas";
+      Produk[] daftar = {
+         new Produk("Beras", 10000),
+         new Produk("Pupuk", 15000),
+         new Produk("Benih", 12000)
+      };
+      int total = 0;
+      System.out.println("Hello POS World");
+      System.out.println("NIM: " + nim + ", Nama: " + namaMhs);
+      System.out.println("Daftar Produk:");
+      for (Produk p : daftar) {
+         System.out.println("- " + p.nama + ": " + p.harga);
+         total += p.harga;
+      }
+      System.out.println("Total harga semua produk: " + total);
    }
-
 }
