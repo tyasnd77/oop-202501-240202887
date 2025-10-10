@@ -118,15 +118,12 @@ public class HelloFunctional {
 **Procedural**
  
   a. Program Java selalu dimulai dari metode main().
-
   b. Dua variabel dibuat:
 
      - nim menyimpan "240202887"
-     
      - nama menyimpan "Tyas"
      
   c. Baris System.out.println(...) mencetak teks ke layar.
-
   d. Output yang dihasilkan adalah:
 
     `Hello World, I am Tyas-240202887`
