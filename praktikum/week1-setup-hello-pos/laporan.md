@@ -118,26 +118,36 @@ public class HelloFunctional {
  **Procedural**
  
 a. Program Java selalu dimulai dari metode main().
+
 b. Dua variabel dibuat:
-   - nim menyimpan "240202887"
-   - nama menyimpan "Tyas"
+     - nim menyimpan "240202887"
+     - nama menyimpan "Tyas"
+     
 c. Baris System.out.println(...) mencetak teks ke layar.
+
 d. Output yang dihasilkan adalah:
 `Hello World, I am Tyas-240202887`
 
 **Functional**
 
 a. Program tetap dimulai dari metode main().
+
 b. Di dalamnya terdapat dua variabel nama dan nim seperti pada versi prosedural.
+
 c. Fungsi utama hanya fokus menghasilkan output dari input tanpa membuat objek.
+
 d. Baris System.out.println(...) mencetak hasil:
 `Hello World, I am Tyas-240202887`
 
 **OOP (Object-Oriented Programming)**
+
 a. Program tetap dimulai dari main() di kelas HelloOOP.
+
 b. Baris
 `Mahasiswa m = new Mahasiswa("Tyas", "240202887");`
+
 membuat objek baru dari kelas Mahasiswa. Konstruktor Mahasiswa(...) dijalankan untuk mengisi nilai nama dan NIM.
+
 c. Baris m.sapa(); memanggil metode sapa() dari objek m, yang mencetak:
 `Hello World, I am Tyas-240202887`
 
@@ -181,8 +191,8 @@ Maintainability tinggi, scalability juga sangat baik untuk aplikasi berbasis dat
 
 4. **Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?**
    
-**Jawaban:** OOP lebih cocok untuk aplikasi POS karena mampu memodelkan entitas nyata seperti produk, pelanggan, dan transaksi ke dalam class yang terpisah dengan data dan perilakunya masing-masing. Hal ini membuat kode lebih terstruktur, mudah dikembangkan, serta dapat digunakan kembali. Dibandingkan prosedural yang cenderung membuat logika bercampur dalam satu alur, OOP memberikan kemudahan dalam pemeliharaan dan perluasan sistem secara berkelanjutan.
+   **Jawaban:** OOP lebih cocok untuk aplikasi POS karena mampu memodelkan entitas nyata seperti produk, pelanggan, dan transaksi ke dalam class yang terpisah dengan data dan perilakunya masing-masing. Hal ini membuat kode lebih terstruktur, mudah dikembangkan, serta dapat digunakan kembali. Dibandingkan prosedural yang cenderung membuat logika bercampur dalam satu alur, OOP memberikan kemudahan dalam pemeliharaan dan perluasan sistem secara berkelanjutan.
 
 5. **Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?**
    
-**Jawaban:** Paradigma fungsional membantu mengurangi kode berulang karena kita bisa memakai fungsi-fungsi sederhana seperti map(), filter(), atau reduce() untuk melakukan banyak hal tanpa menulis perulangan yang sama terus-menerus. Jadi, kita cukup menulis apa yang ingin dilakukan, bukan langkah-langkah detailnya. Hasilnya, kode jadi lebih singkat, rapi, dan gampang dibaca.
+   **Jawaban:** Paradigma fungsional membantu mengurangi kode berulang karena kita bisa memakai fungsi-fungsi sederhana seperti map(), filter(), atau reduce() untuk melakukan banyak hal tanpa menulis perulangan yang sama terus-menerus. Jadi, kita cukup menulis apa yang ingin dilakukan, bukan langkah-langkah detailnya. Hasilnya, kode jadi lebih singkat, rapi, dan gampang dibaca.
