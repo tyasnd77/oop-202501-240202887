@@ -184,4 +184,5 @@ Dari praktikum ini bisa disimpulkan bahwa dengan OOP, program jadi lebih teratur
    Fungsi getter dan setter dalam enkapsulasi adalah untuk mengatur cara akses dan perubahan data di dalam suatu objek agar tetap aman dan terkontrol. 
 
 3. Bagaimana cara class Produk mendukung pengembangan aplikasi POS yang lebih kompleks?
+
    **Jawaban:** Class Produk mendukung pengembangan aplikasi POS yang lebih kompleks karena menjadi dasar untuk mengelola data produk dengan cara yang terstruktur dan aman. Dengan adanya atribut seperti kode, nama, harga, dan stok, aplikasi bisa menambah fitur lain seperti transaksi, laporan, atau manajemen inventori tanpa harus mengubah banyak kode. Selain itu, karena menggunakan enkapsulasi, data produk tetap terlindungi dan hanya bisa diubah melalui method yang sudah disediakan, sehingga sistem lebih stabil dan mudah dikembangkan.
