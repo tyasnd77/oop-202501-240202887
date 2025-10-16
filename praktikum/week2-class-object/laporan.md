@@ -160,7 +160,8 @@ Program ini menampilkan penerapan konsep dasar OOP di Java dengan tiga kelas yan
 
 Perbedaan utama program ini dengan praktikum minggu kemarin terletak pada cara pengorganisasian kode dan penerapan konsep OOP. Jika pada minggu sebelumnya pendekatan prosedural hanya menggunakan fungsi-fungsi tanpa pembagian kelas, dan pendekatan fungsional menekankan pemrosesan data melalui fungsi murni tanpa menyimpan status, maka pada program ini digunakan pendekatan berorientasi objek (OOP) yang membungkus data dan perilaku dalam satu kesatuan bernama class. Setiap objek Produk memiliki atribut dan method sendiri, sehingga lebih terstruktur, mudah dikembangkan, dan mendukung konsep seperti enkapsulasi dan modularitas. Dengan kata lain, OOP memungkinkan program lebih fleksibel dan efisien dalam mengelola banyak data dibandingkan pendekatan prosedural atau fungsional yang cenderung linear dan terpisah.
 
-- Kendala yang dihadapi dan cara mengatasinya.  
+- Kendala yang dihadapi dan cara mengatasinya.
+  
 kode tidak berjalan cara mengatasi dengan debug java dulu
 
 ---
@@ -176,7 +177,8 @@ Dari praktikum ini bisa disimpulkan bahwa dengan OOP, program jadi lebih teratur
 1. Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?  
    **Jawaban:** atribut dibuat private supaya data tidak sembarangan diakses atau diubah dari luar, dan hanya bisa dimanipulasi dengan cara yang aman melalui method yang sudah disediakan yaitu getter dan setter.
 
-2. Apa fungsi getter dan setter dalam enkapsulasi?  
+2. Apa fungsi getter dan setter dalam enkapsulasi?
+   
    **Jawaban:** 
    - Getter digunakan untuk mengambil atau membaca nilai dari atribut yang bersifat private.
 
