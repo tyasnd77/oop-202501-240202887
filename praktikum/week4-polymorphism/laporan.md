@@ -151,6 +151,7 @@ Pada praktikum minggu ke-4, program berjalan dengan membuat array berisi objek d
 Perbedaan pendekatan minggu ini dengan minggu sebelumnya (Inheritance) terletak pada tujuan dan fleksibilitas penggunaannya. Jika inheritance hanya menekankan pewarisan atribut dan method dari superclass ke subclass untuk menghindari duplikasi kode, maka polymorphism berfokus pada perilaku berbeda dari method yang sama. Dengan polymorphism, program menjadi lebih dinamis karena satu referensi superclass dapat mewakili banyak objek subclass sekaligus.
 
 Kendala yang dihadapi adalah memahami perbedaan antara overloading dan overriding yang sekilas mirip, serta cara kerja dynamic binding yang baru terasa saat runtime. Kendala tersebut diatasi dengan mempelajari ulang alur eksekusi program, menambahkan System.out.println() untuk melihat hasil tiap objek, dan membandingkan output antar subclass untuk memahami konsep polymorphism secara nyata.
+
 ---
 
 ## Kesimpulan
