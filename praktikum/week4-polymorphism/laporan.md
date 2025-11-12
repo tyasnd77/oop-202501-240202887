@@ -131,10 +131,12 @@ public class MainPolymorphism {
             System.out.println(p.getInfo()); // Dynamic Binding
         }
 
-        CreditBy.print("<NIM>", "<Nama Mahasiswa>");
+           CreditBy.print("240202887", "Tyas Nurshika Damaia");
     }
 }
+
 ---
+
 
 ## Hasil Eksekusi
   
