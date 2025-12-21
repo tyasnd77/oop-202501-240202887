@@ -1,0 +1,32 @@
+flowchart TD
+    A([Mulai]) --> B[Kasir Scan Produk]
+    B --> C[Sistem Validasi Produk]
+
+    C -->|Tidak valid| B
+    C -->|Valid| D[Sistem Hitung Total Produk]
+
+    D --> E{Pilih Metode Pembayaran}
+
+    %% =====================
+    %% PEMBAYARAN TUNAI
+    %% =====================
+    E -->|Tunai| F[Input Jumlah Transaksi]
+    F --> G{Cukup?}
+    G -->|Tidak| F
+    G -->|Ya| H[Proses Transaksi]
+
+    %% =====================
+    %% PEMBAYARAN NON-TUNAI
+    %% =====================
+    E -->|Non-Tunai| I[Permintaan ke Payment Gateway]
+    I --> J{Saldo Cukup?}
+    J -->|Tidak| I
+    J -->|Ya| K[Otorisasi Berhasil]
+    K --> H
+
+    %% =====================
+    %% PENYELESAIAN
+    %% =====================
+    H --> L[Simpan Transaksi & Produk ke Database]
+    L --> M[Cetak Struk]
+    M --> N([Selesai])

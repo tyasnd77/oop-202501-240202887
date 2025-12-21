@@ -1,0 +1,101 @@
+classDiagram
+    %% =====================
+    %% User & Role
+    %% =====================
+    class User {
+        +idUser: int
+        +username: string
+        +password: string
+        +login()
+        +logout()
+    }
+
+    class Admin {
+        +kelolaProduk()
+        +kelolaToko()
+        +kelolaStok()
+        +lihatLaporan()
+    }
+
+    class Kasir {
+        +buatTransaksi()
+        +tambahItem()
+        +hapusItem()
+        +prosesPembayaran()
+    }
+
+    User <|-- Admin
+    User <|-- Kasir
+
+    %% =====================
+    %% Produk & Stok
+    %% =====================
+    class Produk {
+        +idProduk: int
+        +nama: string
+        +harga: double
+    }
+
+    class Toko {
+        +idToko: int
+        +namaToko: string
+        +alamat: string
+    }
+
+    class Stok {
+        +idStok: int
+        +jumlah: int
+    }
+
+    Produk "1" --> "*" Stok
+    Toko "1" --> "*" Stok
+
+    %% =====================
+    %% Transaksi
+    %% =====================
+    class Transaksi {
+        +idTransaksi: int
+        +tanggal: date
+        +total: double
+        +hitungTotal()
+        +simpanTransaksi()
+    }
+
+    class DetailTransaksi {
+        +qty: int
+        +subtotal: double
+        +hitungSubtotal()
+    }
+
+    Transaksi "1" --> "*" DetailTransaksi
+    Produk "1" --> "*" DetailTransaksi
+    Kasir "1" --> "*" Transaksi
+
+    %% =====================
+    %% Pembayaran
+    %% =====================
+    class Pembayaran {
+        +idPembayaran: int
+        +metode: string
+        +status: string
+        +prosesPembayaran()
+    }
+
+    class PaymentGateway {
+        +otorisasi()
+        +validasiSaldo()
+    }
+
+    Transaksi "1" --> "1" Pembayaran
+    Pembayaran --> PaymentGateway
+
+    %% =====================
+    %% Output
+    %% =====================
+    class Struk {
+        +idStruk: int
+        +tanggalCetak: date
+        +cetakStruk()
+    }
+
+    Transaksi --> Struk

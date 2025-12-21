@@ -1,0 +1,55 @@
+sequenceDiagram
+    actor Kasir
+    participant UI as POS UI
+    participant Cart as Cart Service
+    participant Inv as Inventory Service
+    participant Pay as Payment Service
+    participant PG as Payment Gateway
+    participant DB as Database
+
+    Kasir ->> UI: 1) Klik tombol "Checkout"
+    UI ->> Cart: 2) Hitung total belanja
+    Cart ->> Inv: 3) Periksa stok seluruh produk
+    Inv -->> Cart: 4) Status stok
+
+    alt Stok tidak mencukupi
+        Cart -->> UI: Tampilkan notifikasi stok tidak cukup
+        UI -->> Kasir: Checkout dibatalkan
+    else Stok mencukupi
+        Cart -->> UI: 5) Kirim total belanja
+        Kasir ->> UI: 6) Pilih metode pembayaran\n(Tunai / E-Wallet)
+
+        alt Pembayaran Tunai
+            Kasir ->> UI: 7) Input jumlah uang pelanggan
+            UI ->> Pay: 8) Proses pembayaran tunai
+            alt Uang tidak cukup
+                Pay -->> UI: Tampilkan pesan uang tidak cukup
+                UI -->> Kasir: Minta input ulang
+            else Uang cukup
+                Pay ->> DB: 9) Simpan transaksi
+                Pay ->> Inv: 10) Update stok produk
+                Inv ->> DB: Update data stok
+                DB -->> Inv: OK
+                Inv -->> Pay: 11) Stok berhasil diperbarui
+                Pay -->> UI: 12) Transaksi berhasil
+                UI -->> Kasir: 13) Cetak struk
+            end
+        else Pembayaran E-Wallet
+            UI ->> Pay: 7) Buat permintaan pembayaran e-wallet
+            Pay ->> PG: 8) Kirim permintaan transaksi
+            PG -->> Pay: 9) Status pembayaran (sukses/gagal)
+
+            alt Pembayaran gagal
+                Pay -->> UI: Tampilkan status gagal
+                UI -->> Kasir: Pilih metode pembayaran ulang
+            else Pembayaran sukses
+                Pay ->> DB: 10) Simpan transaksi
+                Pay ->> Inv: 11) Update stok produk
+                Inv ->> DB: Update data stok
+                DB -->> Inv: OK
+                Inv -->> Pay: 12) Stok berhasil diperbarui
+                Pay -->> UI: 13) Transaksi berhasil
+                UI -->> Kasir: 14) Cetak struk
+            end
+        end
+    end

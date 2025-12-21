@@ -1,0 +1,41 @@
+usecaseDiagram
+actor Admin
+actor Kasir
+actor "Payment Gateway" as PG
+
+%% =====================
+%% USE CASE ADMIN
+%% =====================
+Admin --> (Login)
+Admin --> (Kelola Produk)
+Admin --> (Kelola Toko)
+Admin --> (Kelola Stok per Toko)
+Admin --> (Lihat Laporan Penjualan)
+
+%% =====================
+%% USE CASE KASIR
+%% =====================
+Kasir --> (Login)
+Kasir --> (Buat Transaksi)
+Kasir --> (Tambah Item)
+Kasir --> (Hapus Item)
+Kasir --> (Proses Pembayaran)
+Kasir --> (Cetak Struk)
+
+%% =====================
+%% RELASI INCLUDE
+%% =====================
+(Buat Transaksi) ..> (Tambah Item) : <<include>>
+(Buat Transaksi) ..> (Proses Pembayaran) : <<include>>
+(Tambah Item) ..> (Hitung Total Belanja) : <<include>>
+(Proses Pembayaran) ..> (Hitung Total Belanja) : <<include>>
+
+%% =====================
+%% RELASI EXTEND
+%% =====================
+(Hapus Item) ..> (Buat Transaksi) : <<extend>>
+
+%% =====================
+%% PAYMENT GATEWAY
+%% =====================
+(Proses Pembayaran) --> PG
