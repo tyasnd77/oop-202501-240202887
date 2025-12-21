@@ -251,7 +251,7 @@ sequenceDiagram
     end
 
 **Usecase.drawio**
-usecaseDiagram
+```usecaseDiagram
 actor Admin
 actor Kasir
 actor "Payment Gateway" as PG
@@ -291,7 +291,7 @@ Kasir --> (Cetak Struk)
 %% =====================
 %% PAYMENT GATEWAY
 %% =====================
-(Proses Pembayaran) --> PG
+(Proses Pembayaran) --> PG```
 
 ---
 
@@ -300,7 +300,7 @@ Kasir --> (Cetak Struk)
 ![Screenshot hasil](screenshots/Activity_Diagram.png)
 ![Screenshot hasil](screenshots/Class_Diagram.png)
 ![Screenshot hasil](screenshots/Sequence_Diagram.png)
-![Screenshot hasil](screenshots/Usecase_Diagram.png)
+![Screenshot hasil](screenshots/Usecase.png)
 
 ---
 
