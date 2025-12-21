@@ -293,7 +293,6 @@ Kasir --> (Cetak Struk)
 %% =====================
 (Proses Pembayaran) --> PG
 
-
 ---
 
 ## Hasil Eksekusi
