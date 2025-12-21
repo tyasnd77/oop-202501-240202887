@@ -56,7 +56,9 @@ Setiap iterasi lakukan commit incremental dengan pesan: `week6-uml-solid: iteras
 ---
 
 ## Kode Program
+
 **Activity.drawio**
+
 flowchart TD
     A([Mulai]) --> B[Kasir Scan Produk]
     B --> C[Sistem Validasi Produk]
@@ -91,6 +93,7 @@ flowchart TD
     M --> N([Selesai])
 
 **Class.drawio**
+
 classDiagram
     %% =====================
     %% User & Role
@@ -194,6 +197,7 @@ classDiagram
     Transaksi --> Struk
 
 **Sequence.drawio**
+
 sequenceDiagram
     actor Kasir
     participant UI as POS UI
@@ -251,6 +255,7 @@ sequenceDiagram
     end
 
 **Usecase.drawio**
+
 usecaseDiagram
 actor Admin
 actor Kasir
