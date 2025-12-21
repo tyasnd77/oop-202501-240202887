@@ -336,6 +336,7 @@ Kendala utama yang dihadapi adalah menjaga konsistensi antar diagram UML. Setiap
 Kendala lainnya adalah memodelkan alur alternatif dan kondisi gagal (stok tidak cukup, saldo tidak cukup, pembayaran gagal) agar tetap jelas namun tidak membuat diagram menjadi terlalu kompleks.
 
 Cara mengatasinya dilakukan dengan membagi proses ke dalam langkah-langkah yang lebih sederhana, menggunakan notasi UML secara konsisten, serta melakukan pengecekan ulang terhadap setiap diagram agar sesuai dengan kebutuhan sistem dan prinsip SOLID. Dengan pendekatan iteratif, desain sistem menjadi lebih rapi, mudah dipahami, dan siap untuk dikembangkan lebih lanjut.
+
 ---
 
 ## Kesimpulan
