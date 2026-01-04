@@ -56,7 +56,9 @@ Setiap iterasi lakukan commit incremental dengan pesan: `week6-uml-solid: iteras
 ---
 
 ## Kode Program
+
 **Activity.drawio**
+
 flowchart TD
     A([Mulai]) --> B[Kasir Scan Produk]
     B --> C[Sistem Validasi Produk]
@@ -91,6 +93,7 @@ flowchart TD
     M --> N([Selesai])
 
 **Class.drawio**
+
 classDiagram
     %% =====================
     %% User & Role
@@ -194,6 +197,7 @@ classDiagram
     Transaksi --> Struk
 
 **Sequence.drawio**
+
 sequenceDiagram
     actor Kasir
     participant UI as POS UI
@@ -251,6 +255,7 @@ sequenceDiagram
     end
 
 **Usecase.drawio**
+
 usecaseDiagram
 actor Admin
 actor Kasir
@@ -293,7 +298,6 @@ Kasir --> (Cetak Struk)
 %% =====================
 (Proses Pembayaran) --> PG
 
-
 ---
 
 ## Hasil Eksekusi
@@ -301,7 +305,7 @@ Kasir --> (Cetak Struk)
 ![Screenshot hasil](screenshots/Activity_Diagram.png)
 ![Screenshot hasil](screenshots/Class_Diagram.png)
 ![Screenshot hasil](screenshots/Sequence_Diagram.png)
-![Screenshot hasil](screenshots/Usecase_Diagram.png)
+![Screenshot hasil](screenshots/Usecase.png)
 
 ---
 
@@ -332,6 +336,7 @@ Kendala utama yang dihadapi adalah menjaga konsistensi antar diagram UML. Setiap
 Kendala lainnya adalah memodelkan alur alternatif dan kondisi gagal (stok tidak cukup, saldo tidak cukup, pembayaran gagal) agar tetap jelas namun tidak membuat diagram menjadi terlalu kompleks.
 
 Cara mengatasinya dilakukan dengan membagi proses ke dalam langkah-langkah yang lebih sederhana, menggunakan notasi UML secara konsisten, serta melakukan pengecekan ulang terhadap setiap diagram agar sesuai dengan kebutuhan sistem dan prinsip SOLID. Dengan pendekatan iteratif, desain sistem menjadi lebih rapi, mudah dipahami, dan siap untuk dikembangkan lebih lanjut.
+
 ---
 
 ## Kesimpulan
