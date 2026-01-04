@@ -1,24 +1,23 @@
 package com.upb.agripos;
 
 public class MainCartMap {
-
     public static void main(String[] args) {
+        System.out.println("Hello, I am Tyas Nurshika Damaia-240202887 (Week7)");
+
+        Product p1 = new Product("P01", "Beras", 50000);
+        Product p2 = new Product("P02", "Pupuk Urea", 350000);
+        Product p3 = new Product("P03", "Pestisida Tanaman Cabai", 95000);
 
         ShoppingCartMap cart = new ShoppingCartMap();
-
-        Product p1 = new Product("P01","Beras", 50000);
-        Product p2 = new Product("P02","Pupuk", 30000);
-        Product p3 = new Product("P03","Obat Hama", 18000);
-
-        // Tambah produk ke keranjang
         cart.addProduct(p1);
         cart.addProduct(p1);
         cart.addProduct(p2);
+        cart.addProduct(p2);
         cart.addProduct(p3);
-        cart.addProduct(p3);
-        cart.addProduct(p3);
+        cart.printCart();
 
-       cart.printCart();
-        System.out.println("\nTotal Belanja: Rp " + cart.getTotal());
+        System.out.println("\nSetelah menghapus " + p1.getCode() + " " + p1.getName() + " dari keranjang:");
+        cart.removeProduct(p1);
+        cart.printCart();
     }
 }

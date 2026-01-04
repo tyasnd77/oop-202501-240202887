@@ -19,7 +19,7 @@ public class ShoppingCart {
     public void printCart() {
         System.out.println("Isi Keranjang:");
         for (Product p : items) {
-            System.out.println("- " + p.getKode() + " " + p.getName() + " = " + p.getPrice());
+            System.out.println("- " + p.getCode() + " " + p.getName() + " = " + p.getPrice());
         }
         System.out.println("Total: " + getTotal());
     }

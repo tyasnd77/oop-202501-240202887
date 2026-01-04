@@ -30,7 +30,7 @@ public class ShoppingCart {
                 );
             }
         }
-
+        // contoh pengurangan stok bila semua cukup
         for (Map.Entry<Product, Integer> entry : items.entrySet()) {
             entry.getKey().reduceStock(entry.getValue());
         }

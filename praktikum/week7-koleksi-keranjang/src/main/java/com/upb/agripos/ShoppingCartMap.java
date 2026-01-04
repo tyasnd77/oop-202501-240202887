@@ -26,7 +26,7 @@ public class ShoppingCartMap {
     public void printCart() {
         System.out.println("Isi Keranjang (Map):");
         for (Map.Entry<Product, Integer> e : items.entrySet()) {
-            System.out.println("- " + e.getKey().getKode() + " " + e.getKey().getName() + " x" + e.getValue());
+            System.out.println("- " + e.getKey().getCode() + " " + e.getKey().getName() + " x" + e.getValue());
         }
         System.out.println("Total: " + getTotal());
     }
